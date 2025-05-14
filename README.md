@@ -1,2 +1,12 @@
 # Air-pollution-An-AIML-approach
 An artificial intelligence and machine learning approach to Air pollution
+
+Project Overview: AI/ML-Driven Analysis of Air Pollution in IndiaThis project, undertaken as part of the Artificial Intelligence Lab curriculum, addresses the critical issue of air pollution, with a specific focus on Indian conditions. The project was inspired by real-world observations of the significant impact of air quality on daily life.
+
+Data Acquisition and Preprocessing:The initial phase involved acquiring datasets from Kaggle, a repository of data. Standard data preprocessing techniques were then applied. These included:Importing essential libraries (e.g., Pandas, NumPy).Cleaning the data to ensure accuracy and consistency.Handling missing values using appropriate imputation or removal methods.
+
+The key components of the dataset used in the analysis are:DateTimeCO (GT) - Carbon MonoxidePT08.S1 (CO) - Metal oxide sensor for CONMHC (GT) - Non-Methane HydrocarbonsC6H6 (GT) - BenzenePT08.S2 (NMHC) - Metal oxide sensor for NMHCNOx (GT) - Nitrogen OxidesPT08.S3 (NOx) - Metal oxide sensor for NOxNO2 (GT) - Nitrogen DioxideMethodology: 
+
+Time Series Forecasting with ProphetThe project employs the Prophet API, a time-series forecasting tool developed by Facebook, to predict air pollution levels. Prophet is well-suited for this task due to its ability to handle common time-series characteristics, including:Seasonality: Variations in pollution levels across different times of the year.Trends: Long-term increases or decreases in pollution.Holidays: Effects of specific events on pollution.Missing Data: Robustness to gaps in the data.Outliers: Handling extreme values that may skew the analysis.The Prophet API's core component is the Prophet class, which was implemented in this project.  The date format was standardized to YYYY-MM-DD to ensure compatibility with the Prophet API.  The Prophet model was trained on the preprocessed dataset to forecast air pollution levels in specific regions.Results and Visualization:The project's final phase focused on data visualization to communicate the findings effectively. Tools such as Matplotlib and Seaborn were used to generate graphs representing air pollution trends. 
+
+These visualizations included:Daily trends.Weekly trends.Yearly trends.These visualizations enable the identification of patterns and areas where air pollution is most severe.
